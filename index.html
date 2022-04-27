@@ -12,74 +12,103 @@
 </head>
 
 <body>
+	<div class="container">
+		<header class="header">
+			<div class="header__top">
+				<div class="header__avatar">
+					<img
+						src="https://abrakadabra.fun/uploads/posts/2022-02/1643983005_2-abrakadabra-fun-p-avatarka-biznesmena-8.jpg"
+						alt="Аватарка">
+				</div>
+				<div class="header__info">
+					<h1>Антон Кулагин</h1>
+					<p>Я живу в <strong>Пензенской области</strong></p>
+					<p>
+						Изучаю программирование и <em>добиваюсь</em> <strong><em>невероятных</em></strong> успехов в
+						<strong>HTML</strong>тегах
+					</p>
 
-	<img src="https://abrakadabra.fun/uploads/posts/2022-02/1643983005_2-abrakadabra-fun-p-avatarka-biznesmena-8.jpg"
-		width="290" alt="Аватарка">
-	<h1>Антон Кулагин</h1>
-	<hr>
-	<p>Я живу в <strong>Пензенской области</strong></p>
-	<p>
-		Изучаю программирование и <em>добиваюсь</em> <strong><em>невероятных</em></strong> успехов в
-		<strong>HTML</strong>тегах
-	</p>
+					<h2><strong>Список социальных сетей:</strong></h2>
+					<a href="https://t.me/Antonio_Kularus" target="_blank"><strong>Telegram</strong></a>
+					|
+					<a href="https://vk.com/antoniokularus" target="_blank"><strong>ВКонтакте</strong></a>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<nav class="header__menu">
+					<ul>
+						<li><a href="">link 1</a></li>
+						<li><a href="">link 2</a></li>
+						<li><a href="">link 3</a></li>
+						<li><a href="">link 4</a></li>
+						<li><a href="">link 5</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-	<h2><strong>Список социальных сетей:</strong></h2>
-	<a href="https://t.me/Antonio_Kularus" target="_blank"><strong>Telegram</strong></a>
-	|
-	<a href="https://vk.com/antoniokularus" target="_blank"><strong>ВКонтакте</strong></a>
+		<main class="page">
+			<div class="page__hobbys card">
+				<h2>Мои хобби</h2>
+				<ol>
+					<li>Горные лыжи</li>
+					<li>Бильярд</li>
+					<li>Гитара</li>
+				</ol>
+			</div>
 
-	<h2>Мои хобби</h2>
-	<ol>
-		<li>Горные лыжи</li>
-		<li>Бильярд</li>
-		<li>Гитара</li>
-	</ol>
+			<div class="page__experience card">
+				<h2>Опыт работы</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Название</th>
+							<th>Должность</th>
+							<th>Год</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Школа</td>
+							<td>Ученик</td>
+							<td>1989-1999</td>
+						</tr>
+						<tr>
+							<td>Институт</td>
+							<td>Курсант</td>
+							<td>1999-2004</td>
+						</tr>
+						<tr>
+							<td>Войсковая часть</td>
+							<td>Инженер</td>
+							<td>2004-2022</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-	<h2>Опыт работы</h2>
-	<table>
-		<thead>
-			<tr>
-				<th>Название</th>
-				<th>Должность</th>
-				<th>Год</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Школа</td>
-				<td>Ученик</td>
-				<td>1989-1999</td>
-			</tr>
-			<tr>
-				<td>Институт</td>
-				<td>Курсант</td>
-				<td>1999-2004</td>
-			</tr>
-			<tr>
-				<td>Войсковая часть</td>
-				<td>Инженер</td>
-				<td>2004-2022</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<h2>Связаться со мной</h2>
-	<form action="#">
-		<div>
-			<label for="name">Ваше имя:</label>
-			<input id="name" type="text" placeholder="Введите имя">
-		</div>
-		<div>
-			<label for="email">Ваш email:</label>
-			<input id="email" type="email" placeholder="Введите email">
-		</div>
-		<div>
-			<label for="message">Ваше сообщение:</label>
-			<br>
-			<textarea id="message" placeholder="Введите сообщение..." cols="25" rows="6"></textarea>
-		</div>
-		<button type="submit">Отправить!</button>
-	</form>
+			<div class="page__contacts contacts card">
+				<h2>Связаться со мной</h2>
+				<form action="#" class="contacts__form">
+					<div class="contacts__row">
+						<div class="contacts__name">
+							<label for="name">Ваше имя:</label>
+							<input id="name" type="text" placeholder="Введите имя">
+						</div>
+						<div class="contacts__email">
+							<label for="email">Ваш email:</label>
+							<input id="email" type="email" placeholder="Введите email">
+						</div>
+					</div>
+					<div class="contacts__massage">
+						<label for="message">Ваше сообщение:</label>
+						<textarea id="message" placeholder="Введите сообщение..." cols="25" rows="6"></textarea>
+					</div>
+					<button type="submit" class="btn">Отправить!</button>
+				</form>
+			</div>
+		</main>
+	</div>
 
 </body>
 

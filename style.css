@@ -1,12 +1,218 @@
-body {
-	max-width: 1200px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+a:hover{
+	text-decoration: underline;
+	color: rgb(255, 62, 255);
+}
+a:active{
+	color: red;
+}
+button {
+	cursor: pointer;
+	border: none;
+	font-family: inherit;
+}
+ol li{
+	list-style: none;
+}
+ul li{
+	list-style: none;
+}
+
+.btn {
+	background-color: green;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease 0s;
+}
+.btn:hover{
+	background-color: rgb(2, 107, 2);
+}
+
+.container {
+	max-width: 900px;
 	margin: 0 auto;
-	padding: 10px 15px;
+	padding: 10px 15px 30px;
+}
+
+body {
+	background-color: rgb(253, 255, 234);
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.3;
+	font-weight: 500;
+}
+
+.header {
+	background-color: rgb(246, 255, 214);
+	padding: 5px 0px;
+	margin-bottom: 30px;
+}
+.header__top {
+
+	margin-bottom: 20px;
+}
+.header__avatar {
+	align-self: start;
+}
+.header__avatar img {
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+	width: 290px;
+	border-radius: 10px;
+}
+.header__info {
+}
+.header__info h1 {
+	margin-bottom: 20px;
+}
+.header__info h2 {
+	margin-top: 20px;
+}
+.header__bottom {
+	margin-bottom: 20px;
+	background-color: rgb(143, 167, 253);
+	padding: 10px;
+}
+.header__menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 25px;
+	row-gap: 10px;
+	justify-content: space-between;
+}
+.header__menu ul li{
+	white-space: nowrap;
 }
 
 h1 {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: rgb(0, 0, 131);
+}
+h2 {
+	letter-spacing: 2px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+.page {
+	background-color: rgb(218, 218, 218);
+	padding: 5px;
+	border-radius: 5px;
+}
+.card {
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.card:last-child{
+	margin-bottom: 0;
+}
+.page__hobbys {
+	background-color: rgb(255, 179, 79);
+	
+}
+.page__hobbys ol{
+	padding-left: 25px;
+}
+.page__experience {
+	background-color: rgb(187, 255, 179);
+}
+.table{
+	width: 100%;
+	text-align: center;
+}
+.table th {
+	padding-bottom: 10px;
+}
+.table th:nth-child(3), .table td:nth-child(3) {
+background-color: rgb(111, 255, 95);
+}
+
+.table tr:hover {
+	background-color: rgb(111, 255, 95);
+}
+.page__contacts {
+	background-color: rgb(129, 137, 255);
+}
+.page__contacts h2{
+	text-align: center;
+}
+
+.contacts {
+}
+.contacts label{
+	display: block;
+	padding-left: 10px;
+}
+.contacts input,
+.contacts textarea{
+	border: none;
+	outline: none;
+	font-family: inherit;
+	font-size: 16px;
+	width: 100%;
+	padding: 5px 0px;
+}
+.contacts input::placeholder,
+.contacts textarea::placeholder{
+	padding: 0px 10px;	
+}
+
+.contacts__form {
+
+}
+.contacts__form label {
+	font-size: 18px;
+}
+.contacts__name {
+	flex: 0 0 50%;
+}
+.contacts__email {
+	flex: 0 0 50%;
+}
+
+.contacts__massage{
+}
+
+
+@media (min-width:750px){
+	.header__top {
+		display: flex;
+		align-items: center;
+		column-gap: 100px;
+	}
+	.contacts__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	.contacts__email input{
+		border-left: 1px solid #000;
+	}
+}
+
+@media (max-width:840px){
+	.header__top {
+		column-gap: 40px;
+	}
+}
+
+@media (max-width:480px){
+	.page__experience {
+		font-size: 14px;
+	}
+	.contacts h2{
+		font-size: 24px;
+	}
 }
 
 
