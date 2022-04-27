@@ -61,7 +61,6 @@ body {
 	margin-bottom: 30px;
 }
 .header__top {
-
 	margin-bottom: 20px;
 }
 .header__avatar {
@@ -200,9 +199,16 @@ background-color: rgb(111, 255, 95);
 	}
 }
 
+
 @media (max-width:840px){
 	.header__top {
 		column-gap: 40px;
+	}
+}
+@media (max-width: 750px){
+	.header__top {
+		text-align: center;
+
 	}
 }
 
